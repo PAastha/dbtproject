@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: my_source_name
+    database: DATABASEONE
+    schema: DBT_PAASTHA
+    tables:
+      - name: STUDENTS
+      - name: TEACHERS
