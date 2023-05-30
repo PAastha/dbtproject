@@ -26,7 +26,8 @@ target-path: "target"  # directory which will store compiled SQL files
 clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
-
+on-run-start: "insert into DATABASEONE.DBT_PAASTHA.DBT_AUDITED(audit_type) values('audit_start');"
+on-run-end: "insert into DATABASEONE.DBT_PAASTHA.DBT_AUDITED(audit_type) values('audit_end');"
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
