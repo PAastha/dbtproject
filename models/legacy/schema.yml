@@ -1,0 +1,8 @@
+version: 2
+sources:
+    - name: legacy
+      database: DATABASEONE
+      schema: DBT_PAASTHA
+      tables:
+        - name: SOURCETABLE
+        - name: DESTINATIOONTABLE
