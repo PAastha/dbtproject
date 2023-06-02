@@ -6,3 +6,4 @@ models:
       - name: country
         tests:
           - is_nepal
+          
